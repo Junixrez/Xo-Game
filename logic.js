@@ -1,4 +1,6 @@
 let gridItems = document.getElementsByClassName("square")
+let currentTurn = "x"
+
 let boardArray = [
     "0", "1", "2",
     "3", "4", "5",
@@ -12,7 +14,12 @@ for (const item of gridItems) {
 
         let squareContent = document.querySelector(`.square[value="${value}"]`);
 
-        squareContent.innerHTML = "x"
+        squareContent.innerHTML = currentTurn
+        if (currentTurn == "x") {
+            currentTurn = "o"
+        } else {
+            currentTurn = "x"
+        }
 
     })
 }
