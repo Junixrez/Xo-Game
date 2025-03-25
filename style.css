@@ -1,6 +1,6 @@
 #header {
     background-color: rgb(189, 189, 231);
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 20px;
     box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.3);
     width: 60%;
@@ -14,8 +14,18 @@
 body {
     background-color: rgb(48, 48, 48);
     margin: 0%;
-
+    font-family: "Mogra", cursive;
 }
+
+button {
+    font-family: "Mogra", system-ui;
+}
+
+.mogra-regular {
+    font-family: "Mogra", cursive;
+}
+
+
 
 #all-content {
 
@@ -72,6 +82,7 @@ body {
 .square:hover {
     background-color: rgb(84, 91, 131);
 }
+
 
 .action-btn {
     font-size: 20px;
